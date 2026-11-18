@@ -230,7 +230,8 @@
 	],
 	"spells" : [
 		"config/spells/grapple/grapple.json",
-		"config/spells/wallcrasher/wallcrasher.json"
+		"config/spells/wallcrasher/wallcrasher.json",
+		"config/spells/selfFrenzy/selfFrenzy.json"
 	],
 	"skills" : [
 		"config/skills/evasion.json"

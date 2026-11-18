@@ -43,5 +43,24 @@
 			},
 			"additionalProperties" : false
 		}
+	},
+	"ruinsSelfBuff" : {
+		"implements" : "spellEffect",
+		"script" : "spells/ruinsSelfBuff.lua",
+		"patches" : [],
+		"schema" : {
+			"properties" : {
+				"type" : {},
+				"indirect" : {},
+				"optional" : {},
+				"ignoreImmunity" : { "type" : "boolean" },
+				"chainLength" : { "type" : "number" },
+				"cumulative" : { "type" : "boolean" },
+				"battleLogSingular" : { "type" : "string" },
+				"battleLogPlural" : { "type" : "string" },
+				"bonus" : { "additionalProperties" : { "$ref" : "bonusInstance.json" } }
+			},
+			"additionalProperties" : false
+		}
 	}
 }

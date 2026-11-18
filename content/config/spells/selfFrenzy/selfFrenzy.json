@@ -1,0 +1,61 @@
+{
+	"ruinsSelfFrenzy" : {
+		"name" : "Frenzy",
+		"type" : "ability",
+		"targetType" : "CREATURE",
+		"power" : 0,
+		"school" : {
+			"fire" : true
+		},
+		"level" : 4,
+		"gainChance" : {},
+		"defaultGainChance" : 0,
+		"sounds" : {
+			"cast" : "FRENZY"
+		},
+		"animation" : {
+			"affect" : [
+				"C08SPF0"
+			]
+		},
+		"flags" : {
+			"positive" : true,
+			"special" : true
+		},
+		"targetCondition" : {
+			"noneOf" : {}
+		},
+		"graphics" : {
+			"iconBook" : "SPELLINT.def:0:57",
+			"iconScroll" : "SPELLINT.def:0:57",
+			"iconScenarioBonus" : "SPELLINT.def:0:57",
+			"iconEffect" : "SPELLINT.def:0:57"
+		},
+		"levels" : {
+			"base" : {
+				"battleEffects" : {
+					"frenzy" : {
+						"bonus" : {
+							"inFrenzy" : {
+								"duration" : "UNTIL_AFTER_ATTACK_SEQUENCE",
+								"type" : "IN_FRENZY",
+								"val" : 100
+							}
+						},
+						"type" : "ruinsSelfBuff"
+					}
+				},
+				"cost" : 0,
+				"description" : "",
+				"power" : 0,
+				"range" : "X"
+			},
+			"none" : {
+				"description" : "{Frenzy}\n\nTroop intentionally lowers its defenses to increase the ferocity of its attack.\n"
+			},
+			"basic" : {},
+			"advanced" : {},
+			"expert" : {}
+		}
+	}
+}
