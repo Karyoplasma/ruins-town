@@ -25,7 +25,7 @@
 			"additionalProperties" : false
 		},
 		"priority" : 0,
-		"description" : "{Evasion}\n${val}% chance to reduce incoming Melee Damage by ${evadeMelee}% and Ranged Damage by ${evadeRanged}%."
+		"description" : "{Evasion}\nHas a chance to reduce incoming Melee Damage by ${evadeMelee}% and Ranged Damage by ${evadeRanged}%."
 	},
 	"rn_spell_wallCrasher" : {
 		"implements" : "spellEffect",

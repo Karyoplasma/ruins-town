@@ -171,6 +171,14 @@
 			"Initial release"
 		]
 	},
+	"bonuses" : {
+		"RUINS_EVASION_CHANCE" : {
+			"description" : "This unit has a ${val}% to evade incoming attacks",
+			"graphics" : {
+				"icon" : "icons/evasion.png"
+			}
+		}
+	},
 	"factions" : [
 		"config/ruins/town/faction.json",
 		"config/ruins/town/buildings.json",

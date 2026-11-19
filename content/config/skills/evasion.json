@@ -1,7 +1,7 @@
 {
 	"evasion" : {
 		"name" : "Evasion",
-		"specialty" : [], // no generic specialty
+		"specialty" : [ "evasionChance" ],
 		"gainChance" : {
 			"might" : 3,
 			"magic" : 4
@@ -19,6 +19,9 @@
 						}
 					],
 					"icon" : "icons/evasion.png"
+				},
+				"evasionChance" : {
+					"type" : "RUINS_EVASION_CHANCE"
 				}
 			}
 		},
@@ -32,11 +35,13 @@
 			"description" : "{Basic Evasion}\n\nCreatures have a 10% chance to mitigate incoming Damage, reducing Melee Attack Damage by 40% and Ranged Attack Damage by 80%.",
 			"effects" : {
 				"evasion" : {
-					"val" : 10,
 					"addInfo" : {
 						"evadeMelee" : 40,
 						"evadeRanged" : 80
 					}
+				},
+				"evasionChance" : {
+					"val" : 10
 				}
 			}
 		},
@@ -50,11 +55,13 @@
 			"description" : "{Advanced Evasion}\n\nCreatures have a 15% chance to mitigate incoming Damage, reducing Melee Attack Damage by 45% and Ranged Attack Damage by 90%.",
 			"effects" : {
 				"evasion" : {
-					"val" : 15,
 					"addInfo" : {
 						"evadeMelee" : 45,
 						"evadeRanged" : 90
 					}
+				},
+				"evasionChance" : {
+					"val" : 15
 				}
 			}
 		},
@@ -68,11 +75,13 @@
 			"description" : "{Basic Evasion}\n\nCreatures have a 20% chance to mitigate incoming Damage, reducing Melee Attack Damage by 50% and Ranged Attack Damage by 100%.",
 			"effects" : {
 				"evasion" : {
-					"val" : 20,
 					"addInfo" : {
 						"evadeMelee" : 50,
 						"evadeRanged" : 100
 					}
+				},
+				"evasionChance" : {
+					"val" : 20
 				}
 			}
 		}

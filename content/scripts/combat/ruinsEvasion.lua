@@ -42,8 +42,9 @@ function Script:addDodgeBonus(server, battle, unit, ranged)
 end
 
 function Script:onBeforeAttacked(server, battle, unit, other, payload)
-	if self.val <= 0 then return end
-	local chance = clamp(self.val or 0)
+	local chance = clamp(unit:getBonusesValue({type = "RUINS_EVASION_CHANCE"}))
+	if chance <= 0 then return end
+	print(string.format("Rolling evasion on %s with a chance of %d%%", unit:getCreature():getJsonKey(), chance))
 
 	if chance < 100 and server:rngInt(1,100) > chance then return end
 
